@@ -40,6 +40,4 @@
 	}
 	add_action('after_switch_theme', 'jal_install');
 	add_action('after_switch_theme', 'jal_install_data');
-	//register_activation_hook( __FILE__, 'jal_install' );
-	//register_activation_hook( __FILE__, 'jal_install_data' );
-?>
+	

@@ -54,4 +54,3 @@
 	}
 
 	add_action( 'init', 'footer_post_type' );
-?>

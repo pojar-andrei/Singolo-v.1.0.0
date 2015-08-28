@@ -54,4 +54,3 @@
 	}
 
 	add_action( 'init', 'slider_post_type' );
-?>

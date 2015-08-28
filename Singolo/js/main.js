@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
-	debugger
-	$('.menu').on('click',function(el){
-		debugger
+	
+	$('.menu_header').on('click',function(el){
 		$('.nav').toggleClass("nav-max483");
 	});
 

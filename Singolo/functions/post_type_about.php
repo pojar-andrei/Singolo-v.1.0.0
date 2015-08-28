@@ -90,4 +90,3 @@
 		register_taxonomy( $slug, 'worker', $args );
 	}
 	add_action( 'init', 'group_taxonomy' );
-?>

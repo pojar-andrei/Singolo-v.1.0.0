@@ -89,4 +89,3 @@
 		register_taxonomy( $slug, 'service', $args );
 	}
 	add_action( 'init', 'service_taxonomy' );
-?>

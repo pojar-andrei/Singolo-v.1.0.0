@@ -88,4 +88,3 @@
 		register_taxonomy( $slug, 'gallery_imagine', $args );
 	}
 	add_action( 'init', 'gallery_taxonomy' );
-?>

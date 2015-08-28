@@ -1,11 +1,5 @@
 <?php
 
-	function singolo_resources() {
-	
-		wp_enqueue_style('style', get_stylesheet_uri());
-	}
-	//add_action('wp_enqueue_scripts', 'singolo_resources');
-
 	//Header Nav Menu
 	register_nav_menus(array(
 			'primary' => __('Header Menu'),
@@ -24,4 +18,4 @@
 	require_once ('functions/post_type_contact.php');
 
 	require_once ('functions/post_type_footer.php');
-?>
+

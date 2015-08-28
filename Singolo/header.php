@@ -15,36 +15,27 @@
 		<?php wp_head(); ?>
 	</head>
 	
-<body <?php body_class(); ?>>
-	
-	<div class="header">
-		<div class="background_main background_dark">
-			<div class="container">
-				<div class="logo">
-					<a class="logo_text" href="<?php echo home_url(); ?>">
-						SINGOLO
-					</a>
-					<p class="asterix logo logo_text">*</p>
-					
-				</div>
-				<div class="menu nav_text">
-					Menu
-				</div>
-				<nav class="nav">
-
-					<?php 
-						
-						$header_menu = array(
+	<body <?php body_class(); ?>>
+		<div class="header">
+			<div class="background_main background_dark">
+				<div class="container">
+					<div class="logo">
+						<a class="logo_text" href="<?php echo home_url(); ?>">SINGOLO</a>
+						<p class="asterix logo logo_text">*</p>
+					</div>
+					<div class="menu_header nav_text">Menu</div>
+					<nav class="nav">
+						<?php 
+							$header_menu = array(
 								'theme_location' => 'primary',
 							);
-					?>
-
-					<?php wp_nav_menu( $header_menu ); ?>
-	            </nav>
-			</div>
-		</div>
-		<div class="background_main background_dark-lighter"></div>
-	</div>
+							wp_nav_menu( $header_menu ); 
+						?>
+		            </nav>
+				</div><!-- End container -->
+			</div><!-- End background_main -->
+			<div class="background_main background_dark-lighter"></div>
+		</div><!-- End header -->
 	
 
 		

@@ -54,4 +54,3 @@
 	}
 
 	add_action( 'init', 'contact_post_type' );
-?>
