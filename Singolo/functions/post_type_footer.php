@@ -51,6 +51,7 @@
 		        )
 		);
 		register_post_type( $slug, $args );
+		
 	}
 
 	add_action( 'init', 'footer_post_type' );

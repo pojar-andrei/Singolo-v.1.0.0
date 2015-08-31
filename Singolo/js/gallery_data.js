@@ -13,7 +13,7 @@
 	Gallery_Data.prototype.showGallery = function(){
 		var i = 0;
 		_.each(galleryData,function(imagine){
-			this.el.append('<img id="'+i+'"src="'+imagine.url+'" data-gall="'+imagine.type+'">');
+			this.el.append('<a href="'+imagine.postLink+'"><img id="'+i+'"src="'+imagine.url+'" data-gall="'+imagine.type+'"></a>');
 			i++;
 		}.bind(this));
 	}

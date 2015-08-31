@@ -6,10 +6,10 @@ jQuery(document).ready(function($) {
 		this.galleryData = galleryData;
 		this.child_gll_filter = new Gallery_Filter(gll_filter,this.galleryData);
 		this.child_gll_data = new Gallery_Data(gll_data,this.galleryData);
-		this.child_gll_slider = new Gallery_Slider(gll_slider,gll_data,this.galleryData);
+		//this.child_gll_slider = new Gallery_Slider(gll_slider,gll_data,this.galleryData);
 		
 		this.el.on('OpChange', this.filterOpChange.bind(this));
-		this.el.on('imagineClick', this.sliderImg.bind(this));
+		//this.el.on('imagineClick', this.sliderImg.bind(this));
 
 		
 	}

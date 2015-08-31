@@ -47,9 +47,11 @@
 		        ),
 		        'supports'            => array( 
 		        	'title',
+		        	'editor'
 		        )
 		);
 		register_post_type( $slug, $args );
+		
 	}
 
 	add_action( 'init', 'gallery_post_type' );
@@ -86,5 +88,6 @@
 	            'rewrite'               => array( 'slug' => $slug ),
 	        );
 		register_taxonomy( $slug, 'gallery_imagine', $args );
+		
 	}
 	add_action( 'init', 'gallery_taxonomy' );

@@ -51,6 +51,7 @@
 		        )
 		);
 		register_post_type( $slug, $args );
+		
 	}
 
 	add_action( 'init', 'services_post_type' );
@@ -87,5 +88,6 @@
 	            'rewrite'               => array( 'slug' => $slug ),
 	        );
 		register_taxonomy( $slug, 'service', $args );
+		
 	}
 	add_action( 'init', 'service_taxonomy' );

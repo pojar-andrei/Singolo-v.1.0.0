@@ -1,1 +1,1 @@
-<?php get_home();?>
+<?php get_home(); ?>

@@ -29,7 +29,7 @@
 				      	$my_query = new WP_Query($args);
 					    if( $my_query->have_posts() ) : ?>
 					      	<h4 class="description_title">
-								<?php echo $tax_term->name; ?>
+								<?php echo $tax_term->name;?>
 							</h4>
 							<div class="description_text"> 
 								<?php echo $tax_term->description; ?>
@@ -46,41 +46,41 @@
 									endif;
 			        			endforeach;?>
 				        		<script>
-				        			window.galleryData.push({url:'<?php the_field("gallery_imagine"); ?>',type:'<?php the_field("imagine_criterias"); ?>'})
+				        			window.galleryData.push({url:'<?php the_field("gallery_imagine"); ?>',type:'<?php the_field("imagine_criterias"); ?>' ,postLink:'<?php the_permalink(); ?>'})
 				        		</script>	
 		          			<?php 
 		          			endwhile;
-	      				endif;?>
-						<div class="gallery">
-			   				<div class="gallery_nav"> 
-			   					<?php
-		      					foreach($menus as $menu) : ?>
-						    		<a class="gallery_nav_text gallery_nav_text--active" href="" data-dir="<?php echo $menu ?>">
-										<?php echo ucfirst($menu); ?>
-									</a>
-								<?php 
-								endforeach; ?>
-							</div><!-- End gallery_nav -->
-							<?php  wp_reset_query();
+	      				endif;
+	      				wp_reset_query();
 					endforeach; // End foreach $tax_terms
 				endif; // End if $tax_terms ?>
-							<div class="gallery_data">
-												
+				<div class="gallery">
+	   				<div class="gallery_nav"> 
+	   					<?php
+      					foreach($menus as $menu) : ?>
+				    		<a class="gallery_nav_text gallery_nav_text--active" href="" data-dir="<?php echo $menu ?>">
+								<?php echo ucfirst($menu); ?>
+							</a>
+						<?php 
+						endforeach; ?>
+					</div><!-- End gallery_nav -->
+					<div class="gallery_data">
+										
+					</div>
+					<div class="gallery_slider">
+					    <div class="gallery_arrow gallery_arrow_left">
+					      <img src="<?php echo get_bloginfo('template_directory'); ?>/img/prev_arrow.png" data-arrow="prev">
+					    </div>
+					    <div class = "gallery_zoom">
+					     	<div class="gallery_close">
+								<img src="<?php echo get_bloginfo('template_directory'); ?>/img/close.png">
 							</div>
-							<div class="gallery_slider">
-							    <div class="gallery_arrow gallery_arrow_left">
-							      <img src="<?php echo get_bloginfo('template_directory'); ?>/img/prev_arrow.png" data-arrow="prev">
-							    </div>
-							    <div class = "gallery_zoom">
-							     	<div class="gallery_close">
-										<img src="<?php echo get_bloginfo('template_directory'); ?>/img/close.png">
-									</div>
-							    </div>
-							    <div class="gallery_arrow gallery_arrow_right">
-							      <img src="<?php echo get_bloginfo('template_directory'); ?>/img/next_arrow.png" data-arrow="next">
-							    </div>
-							</div>
-						</div> <!-- End gallery -->
+					    </div>
+					    <div class="gallery_arrow gallery_arrow_right">
+					      <img src="<?php echo get_bloginfo('template_directory'); ?>/img/next_arrow.png" data-arrow="next">
+					    </div>
+					</div>
+				</div> <!-- End gallery -->
 			</div><!-- End description -->
 		</div><!-- End container -->
 	</div><!-- End id='portfolio' -->

@@ -19,3 +19,7 @@
 
 	require_once ('functions/post_type_footer.php');
 
+	flush_rewrite_rules();
+
+	
+    

@@ -11,11 +11,11 @@
 		width: 65%;
 	}
 
-	.gallery_data > img:nth-child(4n+0) {
+	.gallery_data  img:nth-child(4n+0) {
 		padding: 0px 20px 20px 0px;
 	}	
 
- 	.gallery_data > img:nth-child(3n+0) {
+ 	.gallery_data  img:nth-child(3n+0) {
     	padding: 0px;
 	}
 }
@@ -37,15 +37,15 @@
 		width: 29%;
 	}
 
-	.gallery_data > img:nth-child(2n+0) {
+	.gallery_data  img:nth-child(2n+0) {
     	padding: 0px;
 	}
 
-	.gallery_data > img:nth-child(3n+0) {
+	.gallery_data  img:nth-child(3n+0) {
 		padding: 0px 20px 20px 0px;
 	}
 
-	.gallery_data > img:nth-child(4n+0) {
+	.gallery_data  img:nth-child(4n+0) {
 		padding: 0px;
 	}	
 
@@ -93,7 +93,7 @@
 		padding: 0px 20px 20px 0px;
 	}
 
-	.gallery_data > img:nth-child(4n+0) {
+	.gallery_data  img:nth-child(4n+0) {
 		padding: 0px 20px 20px 0px;
 	}	
 

@@ -292,14 +292,14 @@ li.slider_item {
 	margin-top: 26px;
 }
 
-.gallery_data > img{
+.gallery_data  img{
 	vertical-align: top;
 	padding: 0px 20px 20px 0px;
 	cursor: pointer;
 }
 
 .gallery_slider {
-    display: inline-block;
+    display: none;
     position: absolute;
     top: 35%;
     right: 22%;
